@@ -1,0 +1,146 @@
+.MyCard{}
+.MyCard figure{}
+.MyCard figure img{    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    padding: 20px;}
+    .CardText h2 {display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin: 0px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;    min-height: 51px;
+    }
+    .CardText p{ margin: 10px 0px;   display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;}
+        .MyCard {    padding: 10px;
+            margin-bottom: 20px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        }
+
+        .CardText {
+            padding: 0px 10px;
+        }
+       
+            /* CSS */
+            .MainBtn {
+              align-items: center;
+              background-clip: padding-box;
+              background-color: #fa6400;
+              border: 1px solid transparent;
+              border-radius: .25rem;
+              box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+              box-sizing: border-box;
+              color: #fff;
+              cursor: pointer;
+              display: inline-flex;
+              font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+              font-size: 16px;
+              font-weight: 600;
+              justify-content: center;
+              line-height: 1.25;
+              margin: 0;
+              min-height: 3rem;
+              padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+              position: relative;
+              text-decoration: none;
+              transition: all 250ms;
+              user-select: none;
+              -webkit-user-select: none;
+              touch-action: manipulation;
+              vertical-align: baseline;
+              width: auto;
+            }
+            
+            .MainBtn:hover,
+            .MainBtn:focus {
+              background-color: #fb8332;
+              box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+            }
+            
+            .MainBtn:hover {
+              transform: translateY(-1px);
+            }
+            
+            .MainBtn:active {
+              background-color: #c85000;
+              box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+              transform: translateY(0);
+            }
+            .ratingC{}
+            .detailCard{display: flex;}
+
+          
+          
+            
+            /* Menu Css */
+     .menu-toggle{color: red;}
+
+            .menu-container {
+   
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+          }
+            
+            
+            .logo-hcl{}
+          .logo-hcl h1{}
+            .menu-toggle {
+              display: none; /* Hide by default on larger screens */
+              background: none;
+              border: none;
+              cursor: pointer;
+              font-size: 18px;
+            }
+            
+            .menu {
+           
+           
+              padding: 10px;
+             
+            }
+            
+            .menu.open {
+              display: flex;
+            }
+            
+            .menu ul {
+              list-style-type: none;
+             display: flex;
+            }
+            
+            .menu li {padding: 0 15px;
+           
+            }
+            
+            .menu a {
+              color: rgb(0, 0, 0);
+              text-decoration: none;
+            }
+            
+            .logoM{}
+            /* Media Query for responsive design */
+            @media screen and (max-width: 768px) {
+              .menu-toggle {
+                display: block; /* Show toggle button on smaller screens */
+              }
+              
+              .menu {
+                position: absolute;
+                top: 0;
+                right: -200px; /* Off-screen initially */
+                transition: transform 0.3s ease;
+              }
+            
+              .menu.open {
+                transform: translateX(-200px); /* Slide in from right when menu is open */
+              }
+            }
+            
+            .menu-header{ background-color: red;}
+           
